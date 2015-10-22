@@ -1,0 +1,230 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 //EN">
+<html>
+   <head>
+      <title>Bob's Entertainment Warehouse</title>
+   </head>
+   <style>
+      form  { display: table;
+      margin: 0px auto;
+      text-align: center;
+      width: 900px;        }
+      p     { display: table-row;  }
+      label { display: table-cell;
+      width: 125px;
+      padding: 5px;        }
+      input { display: table-cell; }
+   </style>
+   <body>
+      <?
+         //FILE : barker_form5.html
+         //PROG : Adam Barker
+         //PURP : Form for Bob's Entertainment Warehouse movie selection
+         ?>
+      <h1 align="center">Bobs Entertainment Warehouse</h1>
+      <h3 align="center">For all your movie needs! If you are interested in any of the movies
+         listed below please fill out this form and select the movies that have
+         sparked your interest!
+      </h3>
+      <form method="post" action="barker_program5.php">
+         <fieldset style=width:100%>
+            <legend align="left"><b>Please Enter Full Name</b></legend>
+            <p>
+               <label></label>
+               <span style="color: red">*Full name required.</span>
+            </p>
+            <p>
+               <label><b>First Name:</b></label>
+               <input type ="text" name ="firstName">
+               <span style="color: red">*</span>
+            </p>
+            <p>
+               <label><b>Last Name:</b></label>
+               <input type ="text" name ="lastName">
+               <span style="color: red">*</span>
+            </p>
+         </fieldset>
+         <br>
+         <h2 align="center">Movies</h2>
+         <fieldset style=width:100%>
+            <legend align="left"><b>Please Check All That Apply</b></legend>
+            <div style="display: table; width: 100%">
+               <p>
+                  <label></label>
+                  <label><b>ID Number</b></label>
+                  <label><b>Entertainer/Author</b></label>
+                  <label><b>Title</b></label>
+                  <label><b>Media</b></label>
+                  <label><b>Feature</b></label>
+               </p>
+               <p>
+                  <input type="checkbox" name="movie[]" value="185296246">
+                  <label>185296246</label>
+                  <label >John Belushi, Tim Mathinson</label>
+                  <label>Animal House</label>
+                  <label>VHS</label>
+                  <label>Delta fraternity</label>
+               </p>
+               <p>
+                  <input type="checkbox" name="movie[]" value="185296246">
+                  <label>197641935</label>
+                  <label >Bette Midler, Goldie Hawn, Dia</label>
+                  <label>First Wives Club</label>
+                  <label>VHS</label>
+                  <label>Don't get mad, Get everything</label>
+               </p>
+               <p>
+                  <input type="checkbox" name="movie[]" value="209987624">
+                  <label>209987624</label>
+                  <label>Elton John</label>
+                  <label>Lion King</label>
+                  <label>VHS</label>
+                  <label>Circle of Life</label>
+               </p>
+               <br>
+               <p>
+                  <input type="checkbox" name="movie[]" value="222333313">
+                  <label>222333313</label>
+                  <label >Simba</label>
+                  <label>Lion King II, Simba</label>
+                  <label>VHS</label>
+                  <label>Return to Pride Rock</label>
+               </p>
+               <br>
+               <p>
+                  <input type="checkbox" name="movie[]" value="234679002">
+                  <label>234679002</label>
+                  <label>O'Riondan</label>
+                  <label>Cranberries Live</label>
+                  <label>VHS</label>
+                  <label>Linger</label>
+               </p>
+               <br>
+               <p>
+                  <input type="checkbox" name="movie[]" value="494938311">
+                  <label>494938311</label>
+                  <label>John Belushi, Tim Mathinson</label>
+                  <label>Animal Barn</label>
+                  <label>DVD</label>
+                  <label>Delta fraternity</label>
+               </p>
+               <p>
+                  <input type="checkbox" name="movie[]" value="494938314">
+                  <label>494938314</label>
+                  <label>Bette Midler, Goldie Hawn, Dia</label>
+                  <label>Last Wives Club</label>
+                  <label>DVD</label>
+                  <label>Don't get mad, Get everything</label>
+               </p>
+               <p>
+                  <input type="checkbox" name="movie[]" value="494938317">
+                  <label>494938317</label>
+                  <label>Elton John</label>
+                  <label>Lyin King</label>
+                  <label>DVD</label>
+                  <label>Circle of Life</label>
+               </p>
+               <br>
+               <p>
+                  <input type="checkbox" name="movie[]" value="494938320">
+                  <label>494938320</label>
+                  <label>Simba</label>
+                  <label>Lyin King 2</label>
+                  <label>DVD</label>
+                  <label>Return to Pride Rock</label>
+               </p>
+               <br>
+               <p>
+                  <input type="checkbox" name="movie[]" value="494938323">
+                  <label>494938323</label>
+                  <label>O'Riondan</label>
+                  <label>Cranberries Crushed</label>
+                  <label>DVD</label>
+                  <label>Linger</label>
+               </p>
+               <br>
+               <p>
+                  <input type="checkbox" name="movie[]" value="494938326">
+                  <label>494938326</label>
+                  <label>David Gilmour</label>
+                  <label>Pulse</label>
+                  <label>DVD</label>
+                  <label>Wish you were here</label>
+               </p>
+               <br>
+               <p>
+                  <input type="checkbox" name="movie[]" value="494938329">
+                  <label>494938329</label>
+                  <label>Stevie Nicks</label>
+                  <label>Stevie, Live at Red</label>
+                  <label>DVD</label>
+                  <label>Dreams</label>
+               </p>
+               <br>
+               <p>
+                  <input type="checkbox" name="movie[]" value="911111111">
+                  <label>911111111</label>
+                  <label>David Gilmour</label>
+                  <label>Heartbeat</label>
+                  <label>VHS</label>
+                  <label>Wish you were here</label>
+               </p>
+               <br>
+               <p>
+                  <input type="checkbox" name="movie[]" value="911111112">
+                  <label>911111112</label>
+                  <label>Stevie Nicks</label>
+                  <label>Stevie, Taped at Red</label>
+                  <label>VHS</label>
+                  <label>Dreams</label>
+               </p>
+            </div>
+         </fieldset>
+         <br>
+         <fieldset style=width:100%>
+            <legend align="left"><b>Please Choose Membership Option</b></legend>
+            <label></label>
+            <p>
+               <label>
+               <input type ="radio" name ="member" value="1">
+               <label>Current Bob's Reward Club Member</label>
+               </label>
+               <label>
+               <input type ="radio" name ="member" value="2">
+               <label>Interested in Joining the Rewards Club</label>
+               </label>
+               <label>
+               <input type ="radio" name ="member" value="3" checked>
+               <label>Not Interested in Joining the Rewards Club</label>
+               </label>
+            </p>
+         </fieldset>
+         <br>
+         <h3 align="center">If you are interested in becoming a rewards
+            club member or are interested in recieving e-mails with updates on
+            movie listings, please enter a valid e-mail address
+         </h3>
+         <fieldset style=width:100%>
+            <legend align="left"><b>Optional</b></legend>
+            <p>
+               <label><b>E-Mail:</b></label>
+               <input type="text" name="email">
+            </p>
+            <p>
+               <label><b>Gender:</b></label>
+               <label>
+                  <select name="gender" style="width: 175px">
+                     <option selected value="blank"></option>
+                     <option value="male">Male</option>
+                     <option value="female">Female</option>
+                  </select>
+               </label>
+            </p>
+         </fieldset>
+         <p>
+            </label>
+            <input type="submit" value="Submit" style="height:50px; width:75px">
+            <input type="reset"  value="Clear" style="height:50px; width:75px">
+            </label>
+      </form>
+   </body>
+</html>
